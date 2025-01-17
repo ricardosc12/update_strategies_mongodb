@@ -7,7 +7,7 @@ The test is performed using Gatling, a powerful performance testing tool. The si
 ### Results
 
 ### Gatling Test Code
-
+```
 class SimulationUpdates extends Simulation {
 
   val httpProtocol8080 = http
@@ -40,3 +40,4 @@ class SimulationUpdates extends Simulation {
     )
   ).protocols(httpProtocol8080)
 }
+```
