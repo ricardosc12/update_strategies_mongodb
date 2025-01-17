@@ -25,11 +25,19 @@ As expected, using `update` inside a `for` loop proved disastrous, resulting in 
 
 ### Test Results
 
+#### Update - For
+
 ![Update - For](./results/update-for.png)
+
+#### Update - BulkWrite
 
 ![Update - Bulk](./results/update-bulk.png)
 
+#### Update - Aggregate (arrayElementAt & filter)
+
 ![Update - Filter](./results/update-filter.png)
+
+#### Update - Aggregate Hash (getField)
 
 ![Update - Hash](./results/update-hash.png)
 
