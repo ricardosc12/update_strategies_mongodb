@@ -4,6 +4,16 @@ This repository focuses on testing different update strategies in MongoDB, aimin
 
 The test is performed using Gatling, a powerful performance testing tool. The simulation updates a set of documents, each with unique values, and measures the efficiency and scalability of the update operations.
 
+### Strategies
+
+1. **/for - Update Logic in Loop**
+
+2. **/bulk - BulkWrite Update**
+
+3. **/filter - Update with Aggregate (ElementAt and Filter)**
+
+4. **/hash - Update with Aggregate (getField)**
+
 ### Results
 
 ### Gatling Test Code
