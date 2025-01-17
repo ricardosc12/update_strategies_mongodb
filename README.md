@@ -33,13 +33,13 @@ As expected, using `update` inside a `for` loop proved disastrous, resulting in 
 
 ![Update - Bulk](./results/update-bulk.png)
 
-#### Update - Aggregate (arrayElementAt & filter)
-
-![Update - Filter](./results/update-filter.png)
-
 #### Update - Aggregate Hash (getField)
 
 ![Update - Hash](./results/update-hash.png)
+
+#### Update - Aggregate (arrayElementAt & filter)
+
+![Update - Filter](./results/update-filter.png)
 
 ### Gatling Test Code
 ```
