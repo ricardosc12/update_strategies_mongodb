@@ -22,7 +22,7 @@ The test is performed using Gatling, a powerful performance testing tool. The si
 
 ![Update - Filter](./results/update-filter.png)
 
-![Update - Hash](./results/update.hash)
+![Update - Hash](./results/update-hash.png)
 
 ### Gatling Test Code
 ```
