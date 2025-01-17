@@ -16,6 +16,14 @@ The test is performed using Gatling, a powerful performance testing tool. The si
 
 ### Results
 
+![Update - For](./results/update-for.png)
+
+![Update - Bulk](./results/update-bulk.png)
+
+![Update - Filter](./results/update-filter.png)
+
+![Update - Hash](./results/update.hash)
+
 ### Gatling Test Code
 ```
 class SimulationUpdates extends Simulation {
