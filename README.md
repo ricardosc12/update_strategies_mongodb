@@ -14,7 +14,16 @@ The test is performed using Gatling, a powerful performance testing tool. The si
 
 4. **/hash - Update with Aggregate (getField)**
 
-### Results
+### Results:
+
+As expected, using `update` inside a `for` loop proved disastrous, resulting in the worst performance. The best performance was observed with `bulkWrite` and `aggregate` with `hash`, which are very similar (within the margin of error). Lastly, using `aggregate` again, but with worse performance than the previous two approaches, as the filtering approach for each item is both costly and unnecessary.
+
+- **Worst performance**: `update` inside a `for` loop.
+- **Best performance**: `bulkWrite` and `aggregate` with `hash` (similar results, within margin of error).
+- **Second best performance**: `aggregate` with filtering, which is slower due to the unnecessary overhead of filtering for each item.
+
+
+### Test Results
 
 ![Update - For](./results/update-for.png)
 
